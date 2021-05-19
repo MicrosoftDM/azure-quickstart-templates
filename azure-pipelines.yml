@@ -24,7 +24,7 @@ steps:
     location: 'Switzerland North'
     templateLocation: 'URL of the file'
     csmFileLink: 'https://raw.githubusercontent.com/MicrosoftDM/azure-quickstart-templates/master/101-webapp-managed-mysql/azuredeploy.json'
-    csmParametersFileLink: https://github.com/MicrosoftDM/azure-quickstart-templates/blob/master/101-webapp-managed-mysql/azuredeploy.parameters.json
+    csmParametersFileLink: 'https://raw.githubusercontent.com/MicrosoftDM/azure-quickstart-templates/master/101-webapp-managed-mysql/azuredeploy.parameters.json'
     overrideParameters: '-siteName $(siteName) -administratorLogin $(adminUser) -administratorLoginPassword $(ARM_PASS)'
     deploymentMode: 'Incremental'
     deploymentName: 'DeployLinuxWebApp'
