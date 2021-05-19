@@ -21,7 +21,7 @@ steps:
     subscriptionId: '9b0fadee-afd6-4049-b5e2-37b302a29519'
     action: 'Create Or Update Resource Group'
     resourceGroupName: 'ARMPipelinesLAMP-rg'
-    location: 'Switzerland North'
+    location: 'West Europe'
     templateLocation: 'URL of the file'
     csmFileLink: 'https://raw.githubusercontent.com/MicrosoftDM/azure-quickstart-templates/master/101-webapp-managed-mysql/azuredeploy.json'
     csmParametersFileLink: 'https://raw.githubusercontent.com/MicrosoftDM/azure-quickstart-templates/master/101-webapp-managed-mysql/azuredeploy.parameters.json'
