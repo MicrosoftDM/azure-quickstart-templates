@@ -20,7 +20,7 @@ steps:
     azureResourceManagerConnection: 'ARMPipelinesLAMP-conn'
     subscriptionId: '9b0fadee-afd6-4049-b5e2-37b302a29519'
     action: 'Create Or Update Resource Group'
-    resourceGroupName: 'ARMPipelinesLAMP-rg'
+    resourceGroupName: 'ARMPipelinesLAMP2-rg'
     location: 'West Europe'
     templateLocation: 'URL of the file'
     csmFileLink: 'https://raw.githubusercontent.com/MicrosoftDM/azure-quickstart-templates/master/101-webapp-managed-mysql/azuredeploy.json'
