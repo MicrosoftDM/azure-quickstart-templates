@@ -13,11 +13,6 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: CopyFiles@2
-  inputs:
-    SourceFolder: '101-webapp-linux-managed-mysql'
-    Contents: '**'
-    TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
@@ -26,12 +21,12 @@ steps:
     subscriptionId: '9b0fadee-afd6-4049-b5e2-37b302a29519'
     action: 'Create Or Update Resource Group'
     resourceGroupName: 'ARMPipelinesLAMP-rg'
-    location: 'SWitzerland North'
-    templateLocation: 'Linked artifact'
-    csmFile: '$(Build.ArtifactStagingDirectory)/azuredeploy.json'
-    csmParametersFile: '$(Build.ArtifactStagingDirectory)/azuredeploy.parameters.json'
+    location: 'Switzerland North'
+    templateLocation: 'URL of the file'
+    csmFile: 'https://raw.githubusercontent.com/MicrosoftDM/azure-quickstart-templates/master/101-webapp-managed-mysql/azuredeploy.json'
     overrideParameters: '-siteName $(siteName) -administratorLogin $(adminUser) -administratorLoginPassword $(ARM_PASS)'
     deploymentMode: 'Incremental'
+    deploymentName: 'DeployLinuxWebApp'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
